@@ -3,43 +3,42 @@ import java.util.Scanner;
 public class NumberSeq {
 
 	public static void main(String[] args) {
-		Scanner scanner = new Scanner(System.in);
-		System.out.print("Please enter a number or Q to quit: ");
-		//initial prompt
-		double input1 = scanner.nextDouble();
-		double input2 = scanner.nextDouble();
-		double input3 = scanner.nextDouble();
 		
-		while (input1<input2+input3) {	
-		//stores input as input1
+			Scanner scanner = new Scanner(System.in);
+			System.out.print("Please enter a number or Q to quit: ");
+			//initial prompt
 		
-		System.out.print("Please enter a second number: ");
-		//ask for number
+			double input1 = scanner.nextDouble();
+			//stores input as input1
 		
+			System.out.print("Please enter a second, bigger number: ");
+
+			double input2 = scanner.nextDouble();
+			//stores input as input2
+			
+			while (true) {	
+
+				double sum = input1 + input2;
+				
+				System.out.println(sum);
+				//prints input1+input2
+
+				
 		
-		//stores input as input2
+				System.out.print("Enter another number: ");
+				//asks for next number
+				double input3 = scanner.nextDouble();
 		
-		System.out.println(input1 + input2);
-		//prints input1+input2
-		
-		System.out.print("Enter an additional number: ");
-		//asks for next number
-		
-		
-		//stores as input3
-		
-		System.out.print(input2 + input3);
-		//prints 2+3
-	
-		
-		
-		
-	
-		
+				System.out.print(input1 + sum);
+				//prints 2+31
+				
+			} if (input1 >= input2) {
+				System.out.print("Well fine, bye.");
+			}
 		}	
 
 	}
-}
+
 
 
 /*
