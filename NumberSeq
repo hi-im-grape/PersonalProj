@@ -1,0 +1,57 @@
+import java.util.Scanner;
+
+public class NumberSeq {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		System.out.print("Please enter a number or Q to quit: ");
+		//initial prompt
+		double input1 = scanner.nextDouble();
+		double input2 = scanner.nextDouble();
+		double input3 = scanner.nextDouble();
+		
+		while (input1<input2+input3) {	
+		//stores input as input1
+		
+		System.out.print("Please enter a second number: ");
+		//ask for number
+		
+		
+		//stores input as input2
+		
+		System.out.println(input1 + input2);
+		//prints input1+input2
+		
+		System.out.print("Enter an additional number: ");
+		//asks for next number
+		
+		
+		//stores as input3
+		
+		System.out.print(input2 + input3);
+		//prints 2+3
+	
+		
+		
+		
+	
+		
+		}	
+
+	}
+}
+
+
+/*
+take user input
+store input as double
+store double and ask for 2nd input
+add together input1 + input2
+store sum1
+print sum1
+ask for input3
+store input3
+add input 3 to sum1
+continue until q to quit
+
+*/
